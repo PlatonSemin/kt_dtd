@@ -1,22 +1,16 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE timeTable [
   <!ELEMENT timeTable (complexes, lessons)>
   <!ELEMENT lessons (lesson+)>
   <!ELEMENT complexes (complex+)>
-  <!ELEMENT lesson (date, time)>  
+  <!ELEMENT lesson (date, time)>
   <!ELEMENT complex (name, address)>
-  
-  <!ATTLIST complex
-      code ID #REQUIRED>
-      
+  <!ATTLIST complex code ID #REQUIRED>
   <!ELEMENT name (#PCDATA)>
-  <!ELEMENT address (#PCDATA)>	
-  
-  
+  <!ELEMENT address (#PCDATA)>  
   <!ATTLIST lesson
-     no NMTOKEN #REQUIRED
+    no NMTOKEN #REQUIRED
     complex IDREF #REQUIRED>
-
   <!ELEMENT date (#PCDATA)>
   <!ELEMENT time (#PCDATA)>
 ]>
@@ -24,12 +18,12 @@
 <timeTable>
     <complexes>
         <complex code="c1">
-            <name>Главный корпус</name>
-            <address>ул. Лесная, д. 5</address>
+            <name>Первый корпус</name>
+            <address>ул. Дорожная, д. 10</address>
         </complex>
         <complex code="c2">
             <name>Второй корпус</name>
-            <address>пр-т Мира, д. 10</address>
+            <address>ул. Мира, д. 10</address>
         </complex>
     </complexes>
     <lessons>
